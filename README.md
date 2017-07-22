@@ -99,7 +99,7 @@ systemctl enable spotify-connect.service
 cd 
 mkdir script
 cd script
-git clone xxxx .
+git clone https://github.com/vLX42/SpotifyRadioOrangePiZero.git .
 sudo nano /etc/rc.local
 ```
 

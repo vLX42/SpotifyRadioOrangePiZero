@@ -1,42 +1,42 @@
 # RadioPlayer 
 Simple Radio/Spotify Player for OrangePi Zero 
 
-######Install OS and basic setup
+###### Install OS and basic setup
 Install armbian and logon to SSH
 
 Install the basic
 
 **Pip**
-...
+```
 wget https://bootstrap.pypa.io/get-pip.py
 sudo python get-pip.py
-...
+```
 
 **More basic setup**
-...
+```
 sudo apt-get install python-dev python-pip libfreetype6-dev libjpeg-dev
 sudo apt-get purge python-pip
 sudo pip install requests
-...
+```
 
 ***OLED driver***
-...
+```
 sudo -H pip install --upgrade luma.oled
-...
+```
 ***GPIO library***
-...
+```
 git clone git@github.com:duxingkei33/orangepi_PC_gpio_pyH3.git
 cd orangepi_PC_gpio_pyH3
 sudo python setup.py  install
-...
+```
 
 ***Install Spotify-Connect-Web***
-...
+```
 apt-get install avahi-utils
 sudo nano /etc/systemd/system/spotify-avahi.service
-...
+```
 Insert the following:
-...
+```
 [Unit]
 Description=Spotify Connect Zeroconf
 After=network.target
@@ -51,14 +51,14 @@ StartLimitBurst=20
 
 [Install]
 WantedBy=multi-user.target
-...
+```
 Auto start up
-...
+```
 systemctl enable spotify-avahi.service
-...
+```
 
 Now install Spotify-Connect-Web
-...
+```
 cd
 mkdir /install
 cd /install
@@ -68,9 +68,9 @@ tar zxvf spotify-connect-web_0.0.3-alpha.tar.gz
 cp <Your keyFile> /install/spotify-connect-web
 
 sudo nano /etc/systemd/system/spotify-connect.service
-...
+```
 Now insert the folloing:
-...
+```
 
 [Unit]
 Description=Spotify Connect
@@ -88,28 +88,28 @@ StartLimitBurst=20
 [Install]
 WantedBy=multi-user.target
 
-...
+```
 Enable autostart
-...
+```
 systemctl enable spotify-connect.service
-...
+```
 
 ***Install the player script***
-...
+```
 cd 
 mkdir script
 cd script
 git clone xxxx .
 sudo nano /etc/rc.local
-...
+```
 
 Insert this before exit
-...
+```
 for i in 3 2 1; do echo 0 >/sys/devices/system/cpu/cpu${i}/online; done # h3consumption
 
 cd /root/script
 sudo python radio.py > /dev/null 2>&1 &
-...
+```
 
 
 ***Credit***
