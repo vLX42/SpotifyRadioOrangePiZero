@@ -1,0 +1,57 @@
+[
+   {
+      "Name":"P3",
+      "Url":"http://live-icy.gss.dr.dk:8000/A/A05H.mp3",
+      "Logo":"logos/p3.pbm"
+   },
+   {
+      "Name":"P6 Beat",
+      "Url":"http://live-icy.gss.dr.dk:8000/A/A29H.mp3",
+      "Logo":"logos/p6.pbm"
+   },
+   {
+      "Name":"P1",
+      "Url":"http://live-icy.gss.dr.dk:8000/A/A03H.mp3",
+      "Logo":"logos/p1.pbm"
+   },
+   {
+      "Name":"P2",
+      "Url":"http://live-icy.gss.dr.dk:8000/A/A04H.mp3",
+      "Logo":"logos/p2.pbm"
+   },
+   {
+      "Name":"Nova",
+      "Url":"http://stream.novafm.dk:80/nova128",
+      "Logo":"logos/nova.pbm"
+   },
+   {
+      "Name":"popfm",
+      "Url":"http://stream.popfm.dk:80/pop128",
+      "Logo":"logos/popfm.pbm"
+   },
+   {
+      "Name":"thevoice",
+      "Url":"http://195.184.101.203/voice128",
+      "Logo":"logos/thevoice.pbm"
+   },
+   {
+      "Name":"nyheder",
+      "Url":"http://live-icy.gss.dr.dk:8000/A/A02H.mp3",
+      "Logo":"logos/nyheder.pbm"
+   },
+   {
+      "Name":"p4",
+      "Url":"http://live-icy.gss.dr.dk:8000/A/A11H.mp3",
+      "Logo":"logos/p4.pbm"
+   },
+   {
+      "Name":"p7 mix",
+      "Url":"http://live-icy.gss.dr.dk:8000/A/A21H.mp3",
+      "Logo":"logos/p7.pbm"
+   },
+   {
+      "Name":"pop100",
+      "Url":"http://onair.100fmlive.dk:80/100fm_live.mp3",
+      "Logo":"logos/pop100.pbm"
+   }
+]
