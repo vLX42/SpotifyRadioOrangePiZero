@@ -94,6 +94,22 @@ Enable autostart
 systemctl enable spotify-connect.service
 ...
 
+***Install the player script***
+...
+cd 
+mkdir script
+cd script
+git clone xxxx .
+sudo nano /etc/rc.local
+...
+
+Insert this before exit
+...
+for i in 3 2 1; do echo 0 >/sys/devices/system/cpu/cpu${i}/online; done # h3consumption
+
+cd /root/script
+sudo python radio.py > /dev/null 2>&1 &
+...
 
 
 ***Credit***
