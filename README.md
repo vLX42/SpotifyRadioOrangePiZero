@@ -1,7 +1,7 @@
 # RadioPlayer 
 Simple Radio/Spotify Player for OrangePi Zero 
 
-![img](http://i.imgur.com/yiTJCps.jpg)
+![img](http://i.imgur.com/yiTJCpss.jpg)
 
 ###### Install OS and basic setup
 Install armbian and logon to SSH
