@@ -1,6 +1,8 @@
 # RadioPlayer 
 Simple Radio/Spotify Player for OrangePi Zero 
 
+![img](http://i.imgur.com/yiTJCps.jpg)
+
 ###### Install OS and basic setup
 Install armbian and logon to SSH
 
@@ -25,7 +27,7 @@ sudo -H pip install --upgrade luma.oled
 ```
 ***GPIO library***
 ```
-git clone git@github.com:duxingkei33/orangepi_PC_gpio_pyH3.git
+git clone https://github.com:duxingkei33/orangepi_PC_gpio_pyH3.git
 cd orangepi_PC_gpio_pyH3
 sudo python setup.py  install
 ```
