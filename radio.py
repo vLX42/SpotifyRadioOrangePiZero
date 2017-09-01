@@ -49,7 +49,7 @@ buttonPin3 = port.PA1
 #36
 buttonPin4 = port.PA6
 #35
-
+relayPin = port.PA10
 
 #GPIO.setup(buttonPin3,GPIO.IN)
 #GPIO.setup(buttonPin4,GPIO.IN)
@@ -93,6 +93,7 @@ gpio.setcfg(buttonPin1, gpio.INPUT)
 gpio.setcfg(buttonPin2, gpio.INPUT)
 gpio.setcfg(buttonPin3, gpio.INPUT)
 gpio.setcfg(buttonPin4, gpio.INPUT)
+gpio.setcfg(relayPin, gpio.OUTPUT)
 
 gpio.pullup(buttonPin1, gpio.PULLDOWN) #Enable pull-up
 gpio.pullup(buttonPin2, gpio.PULLDOWN) #Enable pull-up
@@ -118,13 +119,20 @@ createPlayList()
 
 
 def speakerOn():
+	global bSpeakerOn
 	bSpeakerOn = True
 	#GPIO.output(ledPin, GPIO.HIGH)
+	gpio.output(relayPin, gpio.LOW)
+	print "Speaker On"
 
 def speakerOff():
+	global bSpeakerOn
 	bSpeakerOn = False
 	DisplayClear()
 	#GPIO.output(ledPin, GPIO.LOW)
+	gpio.output(relayPin, gpio.HIGH)
+	print "speaker off"
+
 
 def displaySpoitfyTitle():
 
