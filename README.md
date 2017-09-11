@@ -4,8 +4,9 @@ Simple Radio/Spotify Player for OrangePi Zero
 ![img](https://i.imgur.com/NQ11JEVb.jpg)
 ![img](http://i.imgur.com/yiTJCpsb.jpg)
 
-
+Tuturial instructions
 http://imgur.com/a/4XEQ4
+
 http://imgur.com/gallery/D6mb0
 
 
