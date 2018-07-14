@@ -35,7 +35,7 @@ sudo -H pip install --upgrade luma.oled
 ```
 ***GPIO library***
 ```
-git clone https://github.com:duxingkei33/orangepi_PC_gpio_pyH3.git
+git clone https://github.com/duxingkei33/orangepi_PC_gpio_pyH3.git
 cd orangepi_PC_gpio_pyH3
 sudo python setup.py  install
 ```
